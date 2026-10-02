@@ -257,10 +257,10 @@ with tab_ins:
     c1.plotly_chart(style_fig(fig, 320), width="stretch")
     imp = pd.Series(META["importance"]).sort_values().reset_index()
     imp.columns = ["Feature", "Importance"]
-    imp["Feature"] = imp["Feature"].replace({"model": "Car model", "engine_cc": "Engine size", "car_age": "Age",
+    imp["Feature"] = imp["Feature"].replace({"model": "🚗Car model", "engine_cc": "Engine size", "car_age": "Age",
                                              "kms_driven": "Kilometres", "brand": "Brand", "transmission": "Gearbox",
-                                             "insurance": "Insurance", "seats": "Seats", "fuel_type": "Fuel",
-                                             "ownership": "Ownership"})
+                                             "insurance": "Insurance", "seats": "Seats", "fuel_type": "⛽Fuel",
+                                             "ownership": "🤵🏻‍♂️Ownership"})
     fig = px.bar(imp, x="Importance", y="Feature", orientation="h", color_discrete_sequence=[PALETTE["ink"]])
     fig.update_layout(title="What drives price")
     c2.plotly_chart(style_fig(fig, 320), width="stretch")
