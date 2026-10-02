@@ -10,7 +10,7 @@ from src.config import CURRENT_YEAR, OWNER_ORDER
 from src.predict import CarSpec, Predictor, deal_verdict, emi
 from src.ui import CSS, FUEL_COLORS, PALETTE, band_html, fmt_price, kpi_html, plate_html, style_fig
 
-st.set_page_config(page_title="Car Price Predictor", page_icon="🚗", layout="wide")
+st.set_page_config(page_title="🚗 AutoValue AI ", page_icon="🚗", layout="wide")
 st.markdown(CSS, unsafe_allow_html=True)
 
 
@@ -297,5 +297,5 @@ more kilometres, which keeps every curve and what-if consistent.
 Small dataset: very rare models and exotic cars carry wider uncertainty. Condition, accident history, colour and city are not
 captured. Treat the result as an informed starting point for negotiation, not a formal valuation.
 """)
-st.markdown(f'<p class="small" style="text-align:center;margin-top:2rem">Car Price Predictor · prices in Indian rupees · '
+st.markdown(f'<p class="small" style="text-align:center;margin-top:2rem">🚗 AutoValue AI – Intelligent Car Price Prediction· prices in Indian rupees · '
             f'ages computed for {CURRENT_YEAR}</p>', unsafe_allow_html=True)
