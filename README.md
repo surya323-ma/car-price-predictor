@@ -1,5 +1,4 @@
-# Car Price Predictor
-
+# 🚗 AutoValue AI – Intelligent Car Price Prediction
 Estimate the fair price of a used car in India, see how its value will fall, and check whether a seller's asking price is a good deal. Built with scikit-learn and Streamlit.
 
 ## Features
@@ -49,7 +48,7 @@ Retrain after changing data or features: `python -m src.train`. Run tests: `pip 
 
 ### Streamlit Community Cloud (free, recommended)
 1. Push this folder to a **GitHub repository** (`models/model.joblib` is only ~3 MB, so commit it).
-2. Go to [share.streamlit.io](https://share.streamlit.io), click **Create app**, pick the repo, branch `main`, main file `app.py`.
+2. Go to [share.streamlit.io]https://autovalue0.streamlit.app/, click **Create app**, pick the repo, branch `main`, main file `app.py`.
 3. Under **Advanced settings** choose Python 3.12, then **Deploy**. You get a public URL in a couple of minutes.
 
 If the saved model ever fails to load (for example after a scikit-learn upgrade), the app retrains itself automatically on startup.
